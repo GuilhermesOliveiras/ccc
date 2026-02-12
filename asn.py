@@ -38,9 +38,9 @@ with open('asn.txt', 'r') as f:
                 asns.append(match.group(1))
 
 # Select random ASNs
-if len(asns) > 100:
+if len(asns) > 300:
     random.seed(time.time())
-    selected_asns = random.sample(asns, 100)
+    selected_asns = random.sample(asns, 300)
 else:
     selected_asns = asns
 
